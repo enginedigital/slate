@@ -26,7 +26,8 @@ function deploy(env) {
     debug('themekit cwd to: ' + config.dist.root);
     themekit.command('deploy',
     {
-      env: env
+      env: env,
+      'allow-live': true
     },
     {
       cwd: config.dist.root
